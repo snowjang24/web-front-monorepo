@@ -4,10 +4,13 @@
       "path": "apps/next-app"
     },
     {
-      "path": "packages/design-system"
+      "path": "apps/storybook"
     },
     {
       "path": "packages/shared"
+    },
+    {
+      "path": "packages/ui"
     }
   ],
   "extensions": {

@@ -5,7 +5,12 @@
       "persistent": true
     },
     "build": {
-      "outputs": [".next/**", "!.next/cache/**"] 
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "dist/**",
+        "storybook-static/**"
+      ] 
     },
     "deploy": {
       "dependsOn": ["^build"],
