@@ -1,11 +1,15 @@
 {
-    "tasks": {
-      "deploy": {
-        "dependsOn": ["^build"],
-        "cache": false
-      },
-      "build": {
-        "outputs": ["dist/**"]
-      }
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "outputs": [".next/**", "!.next/cache/**"] 
+    },
+    "deploy": {
+      "dependsOn": ["^build"],
+      "cache": false   
     }
   }
+}
